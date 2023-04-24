@@ -334,7 +334,7 @@ img {
 } */
 
 .privilege.section.padding {
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
 }
 
 .visually-hidden,
@@ -354,13 +354,16 @@ img {
 
 .privilege-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .privilege-item {}
 
 .privilege-item:not(:last-child) {
-  margin-right: 24px;
+  /* margin-right: 24px; */
+  /* margin-bottom: 72px; */
 } 
+
 
 .privilege-subtitle,
 .team-subtitle,
@@ -375,6 +378,16 @@ img {
   color: var(--title-text-color);
 }
 
+.privilege-list {
+    display: flex;
+    justify-content: center;
+    row-gap: 72px;
+}
+.privilege-subtitle {
+  display: flex;
+  justify-content: center;
+}
+
 .privilege-item-text {
   margin-top: 0;
   margin-bottom: 0;
@@ -382,13 +395,14 @@ img {
 }
 
 .privilege-item-icon {
+  display: none;
   margin-bottom: 8px;
   width: 264px;
   height: 112px;
   background-color: var(--logo-footer-secondary);
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   border-radius: 4px;
 }
 
@@ -438,6 +452,10 @@ img {
   height: auto;
   margin: 0;
 } */
+
+.services {
+  display: none;
+}
 
 /* -------------TEAM----------- */
 
