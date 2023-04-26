@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/media.css">
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container container-header">
         <nav class="header-navigation">
           <a href="./index.html" class="logo-accent link">
@@ -39,6 +39,15 @@
             </li>
           </ul>
         </nav>
+
+
+
+
+
+
+      
+
+      
         <address class="header-address">
           <ul class="address-list list">
             <li class="address-item">
@@ -51,10 +60,106 @@
             </li>
           </ul>
         </address>
+
+
+
+
+        <button type="button" class="menu-open-btn js-open-menu">
+          <svg class="menu-icon" width="32" height="22">
+            <use href="./images/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+
+
+
+    <div class="mob-menu js-menu-container is-hidden">
+
+
+      <div>
+          <button type="button" class="menu-close-btn js-close-menu" data-modal-close>
+          <svg class="icon-btn" width="8" height="8">
+            <use href="./images/sprite.svg#icon-vector"></use>
+          </svg>
+        </button>
+        <nav class="mob-menu-nav">
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item ">
+            <a href="./index.html" class="mob-menu-link mob-menu-active-line link text">Studio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a href="./portfolio.html" class="mob-menu-link link text"
+              >Portfolio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a href="" class="mob-menu-link link text">Contacts</a>
+          </li>
+        </ul>
+        </nav>
+      </div>
+
+
+    <div>
+      <address class="mob-menu-adress">
+        <ul class="mob-menu-address-list list">
+          <li class="mob-menu-address-item">
+            <a href="tel:+110001111111" class="mob-menu-phone-link link text"
+              >+11 (000) 111-11-11</a>
+          </li>
+          <li class="mob-menu-address-item">
+            <a href="mailto:info@devstudio.com" class="mob-menu-email-link link text">
+              info@devstudio.com</a>
+          </li>
+        </ul>
+      </address>
+      <div class="mob-menu-soc">
+        <ul class="mob-menu-soc-list list">
+          <li class="mob-menu-soc-item">
+            <a href="" class="mob-menu-soc-link link">
+            <svg class="mob-menu-soc-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          </li>
+          <li class="mob-menu-soc-item">
+            <a href="" class="mob-menu-soc-link link">
+              <svg class="mob-menu-soc-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg>
+            </a>
+          </li>
+          <li class="mob-menu-soc-item">
+            <a href="" class="mob-menu-soc-link link">
+              <svg class="mob-menu-soc-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-menu-soc-item">
+            <a href="" class="mob-menu-soc-link link">
+              <svg class="mob-menu-soc-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+      
+    </div>
+
+    </header>
+
+
+
+
+
+
+
+
     <main>
-      <!-- <section class="hero overlay">
+      <section class="hero overlay">
         <div class="container ">
           <h1 class="hero-title">
             Effective Solutions
@@ -62,7 +167,11 @@
           </h1>
           <button type="button" class="hero-button" data-modal-open>Order Service</button>
         </div>
-      </section> -->
+      </section>
+
+
+
+
       <section class="privilege section padding">
         <div class="container">
           <h2 class="privilege-title">privilege</h2>
@@ -123,13 +232,22 @@
           <h2 class="services-title">What are we doing</h2>
           <ul class="services-list list">
             <li class="services-item">
-              <img src="./images/rectangle1.jpg" alt="computer" width="360">
+              <img
+                srcset="./images/rectangle1-2x.jpg 2x"
+                src="./images/rectangle1.jpg"
+                alt="computer" width="360">
             </li>
             <li class="services-item">
-              <img src="./images/rectangle2.jpg" alt="smartphone" width="360">
+              <img
+                srcset="./images/rectangle2-2x.jpg 2x"
+                src="./images/rectangle2.jpg"
+                alt="smartphone" width="360">
             </li>
             <li class="services-item">
-              <img src="./images/rectangle3.jpg" alt="laptop" width="360">
+              <img
+                srcset="./images/rectangle3-2x.jpg 2x"
+                src="./images/rectangle3.jpg"
+                alt="laptop" width="360">
             </li>
           </ul>
         </div>
@@ -140,6 +258,7 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="./images/1mark_guerrero-2x.jpg 2x"
                 src="./images/1mark_guerrero.jpg"
                 alt="Product Designer"
                 width="264">
@@ -180,6 +299,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/2tom_ford-2x.jpg 2x"
                 src="./images/2tom_ford.jpg"
                 alt="Frontend Developer"
                 width="264">
@@ -220,6 +340,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/3camila_garcia-2x.jpg 2x"
                 src="./images/3camila_garcia.jpg"
                 alt="Marketing"
                 width="264">
@@ -260,6 +381,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/4daniel_wilson-2x.jpg 2x"
                 src="./images/4daniel_wilson.jpg"
                 alt="UI Designer"
                 width="264">
@@ -478,6 +600,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
