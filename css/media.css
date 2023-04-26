@@ -225,6 +225,11 @@
         margin-right: 24px;
         margin-bottom: 0;
     }
+
+    .modal {
+      width: 408px;
+      height: 584px;
+    }
 }
 
 
@@ -270,6 +275,28 @@
 
     .privilege-item {
       margin-bottom: 0;
+    }
+
+    .privilege-subtitle {
+      margin-top: 0;
+      margin-bottom: 8px;
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      color: var(--title-text-color);
+    }
+
+    .privilege-item-text {
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+      margin-top: 0;
+      margin-bottom: 0;
+      color: var(--primary-text-color);
     }
 
     .services {

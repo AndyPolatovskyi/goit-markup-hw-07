@@ -449,17 +449,18 @@ color: var(--primary-text-color);
 } 
 
 
-.privilege-subtitle,
-.team-subtitle,
-.portfolio-subtitle {
+.privilege-subtitle {
+  display: flex;
+  justify-content: center;
   margin-top: 0;
   margin-bottom: 8px;
   font-family: inherit;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  text-transform: capitalize;
 }
 
 .privilege-list {
@@ -467,12 +468,13 @@ color: var(--primary-text-color);
     justify-content: center;
     row-gap: 72px;
 }
-.privilege-subtitle {
-  display: flex;
-  justify-content: center;
-}
 
 .privilege-item-text {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-top: 0;
   margin-bottom: 0;
   color: var(--primary-text-color);
@@ -502,8 +504,7 @@ color: var(--primary-text-color);
   
 }
 
-.services-title,
-.customers-title {
+.services-title {
   margin-top: 0;
   margin-bottom: 72px;
   font-family: inherit;
@@ -603,6 +604,17 @@ color: var(--primary-text-color);
   height: auto;
 }
 
+.team-subtitle {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
 .team-item-text,
 .portfolio-item-text {
   color: var(--primary-text-color);
@@ -644,6 +656,19 @@ color: var(--primary-text-color);
 }
 
 /* -----------------CUSTOMERS------------------ */
+
+
+.customers-title {
+  margin-top: 0;
+  margin-bottom: 72px;
+  font-family: inherit;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-text-color);
+}
 
 .customers-list {
   display: flex;
@@ -798,6 +823,17 @@ color: var(--primary-text-color);
   
 }
 
+.portfolio-subtitle {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
 .portfolio-link:hover,
 .portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
@@ -857,12 +893,13 @@ img {
 }
 
 .footer-label {
+  width: 100%;
   /* margin-right: 24px; */
   margin-bottom: 16px;
 }
 
 .footer-email-text {
-  width: 264px;
+  width: 100%;
   height: 40px;
   font-size: 12px;
   line-height: 2;
@@ -975,8 +1012,11 @@ img {
 
 .modal {
   position: absolute;
-  width: 408px;
-  height: 584px;
+  width: 95%;
+  max-width: 392px;
+  height: 95%;
+  max-height: 584px;
+  overflow: scroll;
   top: 50%;
   left: 50%;
   background-color: var(--background-color-modal);
