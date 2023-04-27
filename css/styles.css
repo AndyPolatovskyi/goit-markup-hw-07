@@ -871,14 +871,10 @@ img {
 }
 
 .container-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* margin-right: 120px; */
+
 }
 
 .container-soc {
-  /* margin-right: 80px; */
   padding-top: 72px;
   padding-bottom: 72px;
 }

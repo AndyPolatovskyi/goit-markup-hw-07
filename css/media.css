@@ -187,10 +187,6 @@
       flex-wrap: wrap;
     }
 
-    .team-item {
-      flex-basis: calc((100% - 24px) / 2);
-    }
-  
      .team-item:nth-child(n+2) {
       margin-bottom: 0;
     }
@@ -206,6 +202,7 @@
     }
   
     .customers-list {
+      justify-content: center;
       gap: 72px 24px;
     }
   
@@ -227,8 +224,6 @@
       margin-bottom: 72px;
     }
     .container-soc {
-      display: flex;
-      flex-direction: column;
       padding: 0;
     }
     .footer-soc-text {
@@ -249,6 +244,7 @@
     .modal {
       max-width: 408px;
       height: 584px;
+      overflow:hidden;
     }
 }
 
@@ -360,7 +356,9 @@
       flex-basis: calc((100% - 24px) / 6);
     }
     .container-logo {
+      display: block;
       margin-right: 120px;
+      margin-bottom: 0;
     }
     .container-soc {
       margin-right: 80px;
